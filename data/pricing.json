@@ -1,15 +1,7 @@
 {
   "endpoints": {
     "gpt-image-2/edit_image": {
-      "unit_price_cents": 6,
-      "billing_config": {
-        "key": "output_resolution",
-        "overrides": {
-          "1k": 6,
-          "2k": 10,
-          "4k": 16
-        }
-      }
+      "unit_price_cents": 16
     },
     "gpt-image-2/text_to_image": {
       "unit_price_cents": 6,
