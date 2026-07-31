@@ -6,15 +6,25 @@
     "gpt-image-2/edit-image": {
       "model": "GPT Image 2",
       "endpoint": "edit_image",
+      "task_type": "asynchronous",
       "models": [
         "gpt-image-2"
       ],
       "fields_by_model": {
         "gpt-image-2": {
+          "model": {
+            "type": "string"
+          },
           "prompt": {
+            "type": "string",
+            "required": true
+          },
+          "source_image_urls": {
+            "type": "array",
             "required": true
           },
           "aspect_ratio": {
+            "type": "string",
             "enum": [
               "auto",
               "1:1",
@@ -35,14 +45,15 @@
             ]
           },
           "output_resolution": {
+            "type": "string",
             "enum": [
               "1k",
               "2k",
               "4k"
             ]
           },
-          "source_image_urls": {
-            "required": true
+          "callback_url": {
+            "type": "string"
           }
         }
       }
@@ -50,15 +61,21 @@
     "gpt-image-2/text-to-image": {
       "model": "GPT Image 2",
       "endpoint": "text_to_image",
+      "task_type": "asynchronous",
       "models": [
         "gpt-image-2"
       ],
       "fields_by_model": {
         "gpt-image-2": {
+          "model": {
+            "type": "string"
+          },
           "prompt": {
+            "type": "string",
             "required": true
           },
           "aspect_ratio": {
+            "type": "string",
             "enum": [
               "auto",
               "1:1",
@@ -79,11 +96,15 @@
             ]
           },
           "output_resolution": {
+            "type": "string",
             "enum": [
               "1k",
               "2k",
               "4k"
             ]
+          },
+          "callback_url": {
+            "type": "string"
           }
         }
       }
