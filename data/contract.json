@@ -50,7 +50,8 @@
               "1k",
               "2k",
               "4k"
-            ]
+            ],
+            "default": "1k"
           },
           "callback_url": {
             "type": "string"
@@ -101,7 +102,8 @@
               "1k",
               "2k",
               "4k"
-            ]
+            ],
+            "default": "1k"
           },
           "callback_url": {
             "type": "string"
