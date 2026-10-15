@@ -1,5 +1,11 @@
 # Changelog
 
+## [v0.3.0](https://github.com/runapi-ai/gpt-image-2-mcp/releases/tag/v0.3.0) - 2026-10-15
+
+### Added
+- The GPT Image 2 text-to-image and edit-image tools accept an optional background of transparent, opaque, or auto.
+
+
 ## [v0.2.0](https://github.com/runapi-ai/gpt-image-2-mcp/releases/tag/v0.2.0) - 2026-09-30
 
 ### Changed

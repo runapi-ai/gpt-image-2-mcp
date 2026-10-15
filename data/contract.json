@@ -53,6 +53,14 @@
             ],
             "default": "1k"
           },
+          "background": {
+            "type": "string",
+            "enum": [
+              "transparent",
+              "opaque",
+              "auto"
+            ]
+          },
           "callback_url": {
             "type": "string"
           }
@@ -104,6 +112,14 @@
               "4k"
             ],
             "default": "1k"
+          },
+          "background": {
+            "type": "string",
+            "enum": [
+              "transparent",
+              "opaque",
+              "auto"
+            ]
           },
           "callback_url": {
             "type": "string"
